@@ -1,0 +1,82 @@
+.section--tariffs {
+    background: #fafafa
+}
+
+.tariffs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 360px));
+    justify-content: center;
+    gap: 58px
+}
+
+.tariff {
+    min-height: 430px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px
+}
+
+.tariff h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    font-weight: 500
+}
+
+.tariff__lead {
+    min-height: 35px;
+    margin: 0 0 8px;
+    color: #6b6b6b;
+    font-size: 12px
+}
+
+.tariff__price {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600
+}
+
+.tariff__price span {
+    font-size: 13px;
+    font-weight: 400
+}
+
+.tariff ul {
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none
+}
+
+.tariff li {
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 7px;
+    font-size: 12px;
+    line-height: 1.35
+}
+
+.tariff li::before {
+    content: "";
+    position: absolute;
+    top: .58em;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--blue)
+}
+
+.tariff__extra {
+    margin: 8px 0 5px;
+    font-size: 15px;
+    font-weight: 600
+}
+
+.tariff__button {
+    width: 100%;
+    min-height: 40px;
+    font-size: 13px
+}

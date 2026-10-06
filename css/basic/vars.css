@@ -1,0 +1,12 @@
+:root {
+    --blue: #0d55f5;
+    --blue-dark: #0a42c7;
+    --navy: #05051f;
+    --text: #111111;
+    --muted: #606060;
+    --border: #d1d1d1;
+    --surface: #f7f7f7;
+    --white: #ffffff;
+    --radius: 6px;
+    --container: 1120px
+}

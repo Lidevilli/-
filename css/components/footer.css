@@ -1,0 +1,76 @@
+.footer {
+    padding: 42px 0 28px;
+    color: #fff;
+    background: var(--navy)
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+}
+
+.footer h3 {
+    margin: 0 0 10px;
+    font-size: 14px
+}
+
+.footer a,
+.footer span {
+    display: block;
+    margin-bottom: 4px;
+    color: #ddd;
+    font-size: 12px
+}
+
+.footer__faq {
+    justify-self: end;
+    width: 320px
+}
+
+.footer-faq {
+    margin-bottom: 10px;
+    background: #252540;
+    padding: 0 18px;
+    border-radius: 8px;
+    border: 1px solid #55556d;
+    transition: background .25s ease, border-color .25s ease
+}
+
+.footer-faq summary {
+    padding: 15px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    list-style: none
+}
+
+.footer-faq summary::-webkit-details-marker {
+    display: none
+}
+
+.footer-faq:hover {
+    background: #20203a
+}
+
+.footer-faq p {
+    margin: 0 0 14px;
+    font-size: 13px;
+    color: #d0d4e0;
+    line-height: 1.5
+}
+
+.footer__copy {
+    grid-column: 1/-1;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600
+}
+
+.footer__copy small {
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: 400
+}

@@ -1,0 +1,97 @@
+.section--steps {
+    background: #fff
+}
+
+.steps-slider {
+    position: relative;
+    padding-inline: 42px
+}
+
+.steps-slider__viewport {
+    overflow: hidden
+}
+
+.steps-slider__track {
+    display: flex;
+    transition: transform .45s ease
+}
+
+.step {
+    flex: 0 0 25%;
+    padding: 0 14px;
+    text-align: center
+}
+
+.step__number {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--blue);
+    font-size: 16px
+}
+
+.step h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 500
+}
+
+.step p {
+    margin: 0 auto;
+    max-width: 190px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.45
+}
+
+.steps-slider__button {
+    position: absolute;
+    top: 27px;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    color: var(--blue);
+    background: #fff;
+    cursor: pointer
+}
+
+.steps-slider__button--prev {
+    left: 0
+}
+
+.steps-slider__button--next {
+    right: 0
+}
+
+.steps-slider__button:disabled {
+    opacity: .2;
+    cursor: default
+}
+
+.steps-slider__dots {
+    display: none;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 20px
+}
+
+.steps-slider__dots button {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #c9c9c9
+}
+
+.steps-slider__dots button.is-active {
+    width: 18px;
+    border-radius: 5px;
+    background: var(--blue)
+}

@@ -1,0 +1,35 @@
+.button {
+    min-height: 42px;
+    padding: 11px 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s ease
+}
+
+.button--primary {
+    color: #fff;
+    background: var(--blue)
+}
+
+.button--primary:hover {
+    background: var(--blue-dark);
+    transform: translateY(-1px)
+}
+
+.button--outline {
+    color: #333;
+    background: #fff;
+    border-color: #a7a7a7
+}
+
+.button--outline:hover {
+    border-color: var(--blue);
+    color: var(--blue)
+}

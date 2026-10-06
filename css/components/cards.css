@@ -1,0 +1,54 @@
+.cards {
+    display: grid;
+    gap: 38px
+}
+
+.cards--3 {
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.info-card {
+    min-height: 220px;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px
+}
+
+.info-card__icon {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 16px
+}
+
+.info-card__icon--red {
+    color: #ff6464;
+    background: #ffe7e7
+}
+
+.info-card__icon--orange {
+    color: #ff9c50;
+    background: #fff0df
+}
+
+.info-card__icon--yellow {
+    color: #e7ad19;
+    background: #fff6d9
+}
+
+.info-card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.info-card p {
+    margin: 0;
+    color: #606060;
+    font-size: 13px;
+    line-height: 1.55
+}

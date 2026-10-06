@@ -1,0 +1,90 @@
+.section--media {
+  background: #fff;
+  padding-block: 60px;
+}
+
+.media-grid {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-card,
+.media-box--gif {
+  width: min(100%, 360px);
+  height: 230px;
+  border-radius: 6px;
+}
+
+.video-card {
+  position: relative;
+  overflow: hidden;
+  background: #d7d7d7;
+}
+
+.video-card__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #d7d7d7;
+}
+
+.video-card__play {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  padding: 0 0 0 5px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .92);
+  color: #0d55f5;
+  font-size: 33px;
+  line-height: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .14);
+  cursor: pointer;
+  transition: transform .2s ease, opacity .2s ease, background .2s ease;
+}
+
+.video-card__play:hover {
+  transform: translate(-50%, -50%) scale(1.06);
+  background: #fff;
+}
+
+.video-card.is-playing .video-card__play {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.media-box--gif {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.media-box--gif img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .media-grid {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .video-card,
+  .media-box--gif {
+    width: min(100%, 420px);
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}

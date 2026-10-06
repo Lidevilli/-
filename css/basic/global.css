@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background: var(--white);
+    font-family: "Iosevka Charon", Inter, sans-serif;
+    font-size: 17px;
+    line-height: 1.45
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%
+}
+
+button,
+input,
+textarea {
+    font: inherit
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.container {
+    width: min(calc(100% - 48px), var(--container));
+    margin-inline: auto
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity .65s ease, transform .65s ease
+}
+
+.reveal--delay-small {
+    transition-delay: .08s
+}
+
+.reveal--delay {
+    transition-delay: .16s
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none
+    }
+}
